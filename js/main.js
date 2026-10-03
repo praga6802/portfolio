@@ -108,24 +108,30 @@ const skills = [
         items: [
             "Java",
             "Spring Boot",
-            "Spring Data JPA",
             "Spring Security",
-            "Hibernate",
+            "Hibernate / JPA",
             "REST APIs",
         ],
     },
     {
         title: "Frontend",
         icon: "bi-window",
-        items: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "React"],
+        items: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Bootstrap",
+            "React",
+            "TypeScript",
+        ],
     },
     {
         title: "Database",
         icon: "bi-database",
-        items: ["MySQL", "PostgresSQL"],
+        items: ["MySQL", "PostgreSQL"],
     },
     {
-        title: "Tools",
+        title: "Tools & IDE's",
         icon: "bi-tools",
         items: [
             "Git",

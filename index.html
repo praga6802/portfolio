@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
-    <link rel="shortcut icon" href="./assets/portfolio.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/portfolio.png" type="image/x-icon">
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
@@ -46,7 +46,8 @@
           <p class="fs-4 accent fw-semibold">Full Stack Java Developer</p>
           <p class="lead">I build secure, reliable web applications that solve real-world problems.</p>
           <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
-            <a href="#projects" class="btn btn-accent btn-lg" id="submit-btn">View My Projects <i class="bi bi-arrow-right"></i></a>
+            <a href="#projects" class="btn btn-accent btn-lg" id="submit-btn">View My Projects <i
+                class="bi bi-arrow-right"></i></a>
             <a href="./assets/Pragadeeswaran_Sekar.pdf" download class="btn btn-outline-light btn-lg"><i
                 class="bi bi-download"></i> Download Resume</a>
           </div>
@@ -80,22 +81,25 @@
 
   <main>
     <section id="about" class="container section">
+      <h1 class="section-title" id="top-title">Crafting Code Creating Solutions.</h1>
       <p class="eyebrow">01 · About</p>
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title">About</h2><br>
       <div class="row g-4">
         <div class="col-lg-7">
-          <p class="text-secondary fs-5">I'm a <strong>Full Stack Java Developer</strong> who enjoys turning real-world
-            requirements into
-            working web applications. I focus on building secure REST APIs with Spring Boot, designing clean relational
-            databases in MySQL, and connecting them to simple, usable interfaces with HTML, CSS and JavaScript.</p>
+          <p class="text-secondary fs-5">I'm a <strong class="text-white">Full Stack Java Developer</strong> who enjoys
+            turning real-world requirements into practical web applications. I focus on building secure REST APIs with
+            <span class="text-light">Java and Spring Boot</span>, designing clean relational databases with MySQL,
+            and creating responsive user interfaces with <span class="text-white">HTML, CSS, JavaScript, and
+            React.</span></p>
         </div>
         <div class="col-lg-5">
           <div class="p-4 card">
             <ul class="list-unstyled mb-0 d-grid gap-3">
               <li><i class="bi bi-server accent me-2"></i> Backend development with Spring Boot</li>
-              <li><i class="bi bi-shield-check accent me-2"></i> Authentication & role-based access</li>
-              <li><i class="bi bi-database accent me-2"></i> Relational data modelling</li>
-              <li><i class="bi bi-window accent me-2"></i> Responsive frontends</li>
+              <li><i class="bi bi-server accent me-2"></i> REST API development</li>
+              <li><i class="bi bi-shield-check accent me-2"></i> Authentication & role-based authorization</li>
+              <li><i class="bi bi-database accent me-2"></i> Relational data design</li>
+              <li><i class="bi bi-window accent me-2"></i> Responsive frontend development</li>
             </ul>
           </div>
         </div>
@@ -200,15 +204,22 @@
     </section>
 
     <section id="contact" class="container section">
+      <h1 id="top-title" class="mb-5">Let's build something meaningful together.</h1>
       <p class="eyebrow">08 · Contact</p>
-      <h2 class="section-title">Get In Touch</h2>
+      <h4 class="section-title">Let's Connect!</h4>
       <div class="row g-4">
         <div class="col-lg-5">
-          <p class="text-secondary text-secondary">Have an opportunity or a question? Send me a message.</p>
+          <p class="text-secondary">Interested in working together or discussing an opportunity? I'd be happy to hear
+            from you.</p>
           <p><i class="bi bi-envelope accent me-2"></i><a href="mailto:pragadeeswaran6802@gmail.com" data-link="email"
               id="emailText">pragadeeswaran6802@gmail.com</a></p>
           <p><i class="bi bi-telephone accent me-2"></i><a href="tel:+918220309750" id="phoneText">+91
               82203 09750</a></p>
+          <p><i class="bi bi-linkedin accent me-2"></i><a href="https://www.linkedin.com/in/praga06/" id="linkedInText"
+              target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          <p><i class="bi bi-github accent me-2"></i><a href="https://github.com/praga6802" id="githubText"
+              target="_blank" rel="noopener noreferrer">GitHub</a></p>
+
 
         </div>
         <div class="col-lg-7">
@@ -222,7 +233,7 @@
               <div class="invalid-feedback">Please enter a valid email.</div>
             </div>
             <div class="mb-3"><label class="form-label" for="message">Message</label><textarea class="form-control"
-                id="message" rows="5" required minlength="10" placeholder="Enter your queries here.."></textarea>
+                id="message" rows="5" required minlength="10" placeholder="Tell me about your project or opportunity..."></textarea>
               <div class="invalid-feedback">Message must be at least 10 characters.</div>
             </div>
             <div class="d-flex justify-content-center">
@@ -230,7 +241,7 @@
                 Message</button>
             </div>
             <div id="formNote" class="small mt-3 text-secondary">
-              <p class="text-secondary">This form opens your email app to send the message.</p>
+              <p class="text-secondary">Opens your email app to send a message.</p>
             </div>
           </form>
         </div>
@@ -240,7 +251,8 @@
 
   <footer class="py-4 border-top border-secondary-subtle">
     <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 text-secondary small">
-      <span class="text-white">© <span id="year" class="text-white"></span> Pragadeeswaran Sekar</span>
+      <span class="text-white">© <span id="year" class="text-white"></span> Pragadeeswaran Sekar. All Rights
+        Reserved.</span>
       <span class="social d-flex gap-3">
         <a href="https://github.com/praga6802" data-link="github" class="text-white"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/praga06/" data-link="linkedin" class="text-white"><i

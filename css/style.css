@@ -416,3 +416,12 @@ a:hover {
 .lead {
   color: lightgreen;
 }
+
+#top-title{
+  background-image: linear-gradient(to right,red, purple,rgb(20, 85, 184));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 40px;
+}
