@@ -7,17 +7,6 @@ const profile = {
 
 const isPlaceholder = (v) => v.startsWith("[");
 
-const stack = [
-    "Java",
-    "Spring Boot",
-    "Spring Security",
-    "JPA / Hibernate",
-    "MySQL",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "Bootstrap",
-];
 const architecture = [
     "HTML, CSS & JavaScript",
     "RESTful APIs",
@@ -63,7 +52,19 @@ const projects = [
             "Implementing secure JWT authentication",
             "Maintaining data consistency across related entities",
         ],
+        stack: [
+            "Java",
+            "Spring Boot",
+            "Spring Security",
+            "MySQL",
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "React",
+            "TailwindCss",
+        ],
     },
+
     {
         num: "02",
         title: "Travellers Pick",
@@ -86,7 +87,7 @@ const projects = [
             "User Profile",
         ],
         github: "https://github.com/praga6802/Travellers-Pick",
-        demo: "https://travellerspick.up.railway.app/",
+        demo: "https://travellers-pick-frontend.vercel.app",
         problem:
             "Managing travel packages, tours, itineraries, and bookings across separate processes can be difficult and inefficient. Travelers also need a simple way to explore tours and access detailed travel information.",
         solution:
@@ -98,10 +99,33 @@ const projects = [
             "Implementing data validation and meaningful error responses.",
             "Maintaning data consistency across related entities.",
         ],
+        stack: [
+            "Java",
+            "Spring Boot",
+            "Spring Security",
+            "MySQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap",
+        ],
     },
 ];
 
 const skills = [
+    {
+        title: "Frontend",
+        icon: "bi-window",
+        items: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "React",
+            "TypeScript",
+            "Bootstrap",
+            "TailwindCss",
+        ],
+    },
     {
         title: "Backend",
         icon: "bi-server",
@@ -111,18 +135,6 @@ const skills = [
             "Spring Security",
             "Hibernate / JPA",
             "REST APIs",
-        ],
-    },
-    {
-        title: "Frontend",
-        icon: "bi-window",
-        items: [
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-            "Bootstrap",
-            "React",
-            "TypeScript",
         ],
     },
     {
@@ -138,6 +150,7 @@ const skills = [
             "GitHub",
             "Maven",
             "Postman",
+            "Docker",
             "IntelliJ IDEA",
             "Eclipse",
         ],
@@ -165,7 +178,7 @@ document.getElementById("projectGrid").innerHTML = projects
     <span class="num">${p.num}</span>
     <h4 class="fw-bold mt-1">${p.title}</h4>
     <p class="text-secondary">${p.description}</p>
-    <div class="mb-4">${tags(stack)}</div>
+    <div class="mb-4">${tags(p.stack)}</div>
     <button class="btn btn-accent mt-auto align-self-start" data-project="${i}">View Project <i class="bi bi-arrow-right"></i></button>
   </div></div>`,
     )
@@ -189,7 +202,7 @@ document.addEventListener("click", (e) => {
     <h6 class="accent">Solution</h6><p>${p.solution}</p>
     <h6 class="accent">Key Features</h6><ul>${p.features.map((f) => `<li>${f}</li>`).join("")}</ul>
     <h6 class="accent">Architecture</h6><ol>${architecture.map((a) => `<li>${a}</li>`).join("")}</ol>
-    <h6 class="accent">Tech Stack</h6><div class="mb-3">${tags(stack)}</div>
+    <h6 class="accent">Tech Stack</h6><div class="mb-3">${tags(p.stack)}</div>
     <h6 class="accent">Challenges</h6><ul>${p.challenges.map((c) => `<li>${c}</li>`).join(" ")}</ul>
     <div class="d-flex flex-wrap gap-2 mt-4">${link(p.github, "GitHub", "bi-github")}${link(p.demo, "Live Demo", "bi-box-arrow-up-right")}</div>`;
     modal.show();
