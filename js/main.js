@@ -61,7 +61,7 @@ const projects = [
             "CSS",
             "TypeScript",
             "React",
-            "TailwindCss",
+            "TailwindCSS",
         ],
     },
 
@@ -123,7 +123,7 @@ const skills = [
             "React",
             "TypeScript",
             "Bootstrap",
-            "TailwindCss",
+            "TailwindCSS",
         ],
     },
     {
