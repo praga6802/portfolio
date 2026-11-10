@@ -59,7 +59,7 @@ const projects = [
             "MySQL",
             "HTML",
             "CSS",
-            "TypeScript",
+            "JavaScript",
             "React",
             "TailwindCSS",
         ],
